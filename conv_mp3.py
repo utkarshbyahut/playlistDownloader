@@ -7,11 +7,11 @@ Convert an MP4 to MP3 and embed a thumbnail taken from the video as the MP3 cove
 - Requires ffmpeg and ffprobe to be installed and available on PATH.
 
 Usage:
-  python mp4_to_mp3_with_thumbnail.py input.mp4
-  python mp4_to_mp3_with_thumbnail.py input.mp4 -o output.mp3
-  python mp4_to_mp3_with_thumbnail.py input.mp4 --time 00:00:05         # use 5s frame
-  python mp4_to_mp3_with_thumbnail.py input.mp4 --time 7.2              # 7.2 seconds
-  python mp4_to_mp3_with_thumbnail.py input.mp4 --kbps 192              # set bitrate (default VBR q=2)
+  python3 conv_mp3.py input.mp4
+  python3 conv_mp3.py input.mp4 -o output.mp3
+  python3 conv_mp3.py input.mp4 --time 00:00:05         # use 5s frame
+  python3 conv_mp3.py input.mp4 --time 7.2              # 7.2 seconds
+  python3 conv_mp3.py input.mp4 --kbps 192              # set bitrate (default VBR q=2)
 
 Notes:
 - By default uses high-quality VBR (-q:a 2). You can force CBR via --kbps.
